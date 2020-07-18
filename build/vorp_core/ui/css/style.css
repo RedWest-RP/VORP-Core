@@ -17,6 +17,7 @@
 
 body {
     background-color: transparent;
+	overflow-y: hidden;
 }
 
 .Header__inner__3hvj8 {

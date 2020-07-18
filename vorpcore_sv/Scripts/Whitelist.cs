@@ -66,8 +66,8 @@ namespace vorpcore_sv.Scripts
                 }
                 else
                 {
-                    deferrals.done(LoadConfig.Langs["NoInWhitelist"]);
-                    setKickReason(LoadConfig.Langs["NoInWhitelist"]);
+                    deferrals.done(string.Format(LoadConfig.Langs["NoInWhitelist"], steamIdentifier));
+                    setKickReason(string.Format(LoadConfig.Langs["NoInWhitelist"], steamIdentifier));
                 }
             }
             else
