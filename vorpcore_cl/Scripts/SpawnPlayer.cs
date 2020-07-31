@@ -102,7 +102,7 @@ namespace vorpcore_cl.Scripts
             {
                 TriggerServerEvent("vorp:PlayerForceRespawn");
                 TriggerEvent("vorp:PlayerForceRespawn");
-                RespawnSystem.resspawnPlayer();
+                RespawnSystem.respawnPlayer();
             }
         }
 

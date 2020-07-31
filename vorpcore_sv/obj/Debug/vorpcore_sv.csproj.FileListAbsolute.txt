@@ -13,5 +13,10 @@ e:\Projects\vorp\VORP-Core\build\vorp_core\Es.json
 e:\Projects\vorp\VORP-Core\build\vorp_core\vorpcore_sv.net.dll
 e:\Projects\vorp\VORP-Core\vorpcore_sv\obj\Debug\vorpcore_sv.csprojAssemblyReference.cache
 e:\Projects\vorp\VORP-Core\vorpcore_sv\obj\Debug\vorpcore_sv.csproj.CoreCompileInputs.cache
-e:\Projects\vorp\VORP-Core\vorpcore_sv\obj\Debug\vorpcore_sv.csproj.CopyComplete
 e:\Projects\vorp\VORP-Core\vorpcore_sv\obj\Debug\vorpcore_sv.net.dll
+D:\red\VORP-Core\build\vorp_core\Config.json
+D:\red\VORP-Core\build\vorp_core\Es.json
+D:\red\VORP-Core\build\vorp_core\vorpcore_sv.net.dll
+D:\red\VORP-Core\vorpcore_sv\obj\Debug\vorpcore_sv.csproj.CoreCompileInputs.cache
+D:\red\VORP-Core\vorpcore_sv\obj\Debug\vorpcore_sv.csproj.CopyComplete
+D:\red\VORP-Core\vorpcore_sv\obj\Debug\vorpcore_sv.net.dll

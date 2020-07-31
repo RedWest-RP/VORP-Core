@@ -80,7 +80,7 @@ namespace vorpcore_sv.Scripts
             Debug.WriteLine($"{playerName} is connecting with (Identifier: [{steamIdentifier}])");
 
             string sid = "steam:" + steamIdentifier;
-            Debug.WriteLine(sid);
+            //Debug.WriteLine(sid);
             Exports["ghmattimysql"].execute("SELECT * FROM characters WHERE identifier LIKE ?", new object[] { sid.ToString() }, new Action<dynamic>((result) =>
             {
                 Debug.WriteLine(result.Count.ToString());
@@ -91,7 +91,19 @@ namespace vorpcore_sv.Scripts
                     {
                         inventory = result[0].inventory;
                     }
-                    LoadCharacter.characters[sid] = new Character(sid, result[0].group.ToString(), result[0].job.ToString(), result[0].jobgrade.ToString(), result[0].firstname.ToString(), result[0].lastname.ToString(), inventory, result[0].status.ToString(), result[0].coords.ToString(), double.Parse(result[0].money.ToString()), double.Parse(result[0].gold.ToString()), double.Parse(result[0].rol.ToString()), int.Parse(result[0].xp.ToString()), Convert.ToBoolean(result[0].isdead.ToString()));
+
+                    string group = result[0].group.ToString();
+                    string job = result[0].job.ToString();
+                    string jobgrade = result[0].jobgrade.ToString();
+                    string firstname = result[0].firstname.ToString();
+                    string lastname = result[0].lastname.ToString();
+                    string status = result[0].status.ToString();
+                    string coords = result[0].coords.ToString();
+                    double money = double.Parse(result[0].money.ToString());
+                    double gold = double.Parse(result[0].gold.ToString());
+                    double rol = double.Parse(result[0].rol.ToString());
+
+                    LoadCharacter.characters[sid] = new Character(sid, group, job, jobgrade, firstname, lastname, inventory, status, coords, money, gold, rol, int.Parse(result[0].xp.ToString()), Convert.ToBoolean(result[0].isdead.ToString()));
                 }
             }));
         }

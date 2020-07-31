@@ -17,6 +17,5 @@ e:\Projects\vorp\VORP-Core\build\vorp_core\vorpcore_cl.net.dll
 e:\Projects\vorp\VORP-Core\build\vorp_core\vorpcore_cl.net.pdb
 e:\Projects\vorp\VORP-Core\vorpcore_cl\obj\Debug\vorpcore_cl.csprojAssemblyReference.cache
 e:\Projects\vorp\VORP-Core\vorpcore_cl\obj\Debug\vorpcore_cl.csproj.CoreCompileInputs.cache
-e:\Projects\vorp\VORP-Core\vorpcore_cl\obj\Debug\vorpcore_cl.csproj.CopyComplete
 e:\Projects\vorp\VORP-Core\vorpcore_cl\obj\Debug\vorpcore_cl.net.dll
 e:\Projects\vorp\VORP-Core\vorpcore_cl\obj\Debug\vorpcore_cl.net.pdb

@@ -35,13 +35,13 @@ namespace vorpcore_sv.Utils
 
         private void removeMoney(int handle, int typeCash, double quantity)
         {
-
             Player player = getSource(handle);
 
             string sid = ("steam:" + player.Identifiers["steam"]);
 
             if (LoadCharacter.characters.ContainsKey(sid))
             {
+                Debug.WriteLine(string.Format("{0} {1} {2}", sid, typeCash, quantity));
                 LoadCharacter.characters[sid].removeCurrency(typeCash, quantity);
 
                 JObject nuipost = new JObject();
