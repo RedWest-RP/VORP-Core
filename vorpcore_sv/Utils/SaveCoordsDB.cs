@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using vorpcore_sv.Scripts;
 
@@ -71,7 +72,8 @@ namespace vorpcore_sv.Utils
         private async Task saveLastCoordsTick()
         {
             await Delay(300000);
-            foreach (var source in LastCoordsInCache)
+            Dictionary<Player, Tuple<Vector3, float>> lastCoordToSave = LastCoordsInCache.ToDictionary(p => p.Key, p => p.Value);
+            foreach (var source in lastCoordToSave)
             {
                 string sid = ("steam:" + source.Key.Identifiers["steam"]);
                 try
@@ -93,7 +95,7 @@ namespace vorpcore_sv.Utils
                 }
                 catch { continue; }
             }
-
+            await Delay(1000);
         }
 
 

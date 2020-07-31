@@ -47,6 +47,8 @@ namespace vorpcore_sv.Class
         {
             this.identifier = identifier;
             this.job = "unemployed";
+            this.group = "user";
+            this.inventory = "{}";
         }
 
         public Character(string identifier, string group, string job, string jobgrade, string firstname, string lastname, string inventory, string status, string coords, double money, double gold, double rol, int xp, bool isdead)
@@ -144,13 +146,13 @@ namespace vorpcore_sv.Class
         public void setJob(string newjob)
         {
             job = newjob;
-            Exports["ghmattimysql"].execute($"UPDATE characters SET job=? WHERE identifier=?", new object[] { newjob, identifier });
+            Exports["ghmattimysql"].execute($"UPDATE characters SET job=? WHERE identifier=?", new string[] { newjob, identifier });
         }
 
         public void setGroup(string newgroup)
         {
             group = newgroup;
-            Exports["ghmattimysql"].execute($"UPDATE characters SET group=? WHERE identifier=?", new object[] { newgroup, identifier });
+            Exports["ghmattimysql"].execute($"UPDATE characters SET `group`=? WHERE identifier=?", new string[] { newgroup.ToString(), identifier });
         }
 
         public void setDead(bool dead)

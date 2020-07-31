@@ -1,2 +1,5 @@
 *.lock
 .vs/*
+.vs
+vorpcore_cl/obj/Debug
+vorpcore_sv/obj/Debug
